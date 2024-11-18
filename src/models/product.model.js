@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+
 const productSchema = new mongoose.Schema(
     {
         title: {
@@ -26,7 +27,9 @@ const productSchema = new mongoose.Schema(
             require: true,
             default: true
         },
-        image_base_64:,
+        image_base_64:{
+            type: String
+        },
         seller_id: {
             type: mongoose.Schema.Types.ObjectId, //Debe ser el mismo tipo que el id de la coleccion de User
             ref: 'User',
