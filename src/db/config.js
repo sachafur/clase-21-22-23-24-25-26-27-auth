@@ -13,4 +13,4 @@ mongoose.connect(ENVIROMENT.DB_URL)
         console.error('Error de conexion')
     }
 )
-export defoult mongoose
+export default mongoose
